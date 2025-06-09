@@ -16,7 +16,7 @@ pipeline {
             stage('Deploy') {
             steps {
                 echo "docker container deploying..."
-                sh "docker run -d -p 8001:8000 arun1278/django-backend:v1"
+                sh "docker run -d -p 8000:8000 arun1278/django-backend:v1"
             }
         }
     }
